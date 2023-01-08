@@ -1,0 +1,2 @@
+CALL apoc.import.csv([{fileName: 'file:/people.csv', labels: ['People']},{fileName: 'file:/webpages.csv',labels:['Webpage']}],
+                        [{fileName: 'file:/friends.csv',type:'FRIENDS'},{fileName: 'file:/likes.csv',type:'LIKES'}], {});
